@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HomeNex Demo — Coming Soon</title>
+<meta name="description" content="The interactive HomeNex demo is on its way. In the meantime, try the live product.">
+<meta name="theme-color" content="#166534">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23166534'/><path d='M26 52 L50 30 L74 52 L74 74 L58 74 L58 58 L42 58 L42 74 L26 74 Z' fill='none' stroke='white' stroke-width='6' stroke-linjoin='round' stroke-linecap='round'/><circle cx='72' cy='30' r='9' fill='%2325D366'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--green:#166534;--green-700:#14532d;--green-900:#052e16;--wa:#25d366;--paper:#fbfbf8;--muted:#5c6b60;--line:#e4e9e3}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',system-ui,sans-serif;background:var(--paper);color:#26332a;min-height:100dvh;display:grid;place-items:center;text-align:center;padding:32px;position:relative;overflow:hidden}
+body::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(800px 460px at 70% -10%,rgba(37,211,102,.12),transparent 60%),radial-gradient(680px 520px at 10% 10%,rgba(22,101,52,.09),transparent 55%)}
+body::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.45;background-image:linear-gradient(rgba(22,101,52,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(22,101,52,.05) 1px,transparent 1px);background-size:52px 52px;mask-image:radial-gradient(640px 460px at 50% 30%,#000,transparent 75%)}
+.card{max-width:560px}
+.mark{width:66px;height:66px;border-radius:19px;background:linear-gradient(150deg,var(--green),var(--green-700));display:grid;place-items:center;margin:0 auto 26px;box-shadow:0 16px 34px -12px rgba(22,101,52,.6);position:relative}
+.mark svg{width:36px;height:36px}
+.mark i{position:absolute;top:-5px;right:-5px;width:18px;height:18px;border-radius:50%;background:var(--wa);border:3px solid var(--paper)}
+.tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);padding:7px 15px;border-radius:30px;font-size:.82rem;font-weight:700;color:var(--green-700);box-shadow:0 8px 24px -14px rgba(5,46,22,.3);margin-bottom:24px}
+.tag b{width:8px;height:8px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 0 rgba(37,211,102,.6);animation:pulse 1.9s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 9px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+h1{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(2rem,6vw,3rem);font-weight:800;letter-spacing:-.02em;color:#0f1a12;margin-bottom:14px;line-height:1.08}
+h1 span{color:var(--green)}
+p{color:var(--muted);font-size:1.1rem;max-width:44ch;margin:0 auto 30px}
+.actions{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:12px;font-weight:700;font-size:.98rem;text-decoration:none;transition:transform .16s,box-shadow .24s,background .2s;cursor:pointer}
+.btn svg{width:18px;height:18px}
+.btn-primary{background:var(--green);color:#fff;box-shadow:0 12px 26px -10px rgba(22,101,52,.6)}
+.btn-primary:hover{transform:translateY(-2px);background:#15803d}
+.btn-ghost{background:#fff;color:var(--green-700);border:1.5px solid #d3dcd2}
+.btn-ghost:hover{transform:translateY(-2px);border-color:var(--green);color:var(--green)}
+small{display:block;margin-top:30px;color:#8a978d;font-size:.85rem}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9h5v-5h4v5h5v-9"/></svg>
+      <i></i>
+    </div>
+    <span class="tag"><b></b>Interactive demo · Coming soon</span>
+    <h1>The HomeNex demo is <span>almost ready</span></h1>
+    <p>We're putting the finishing touches on a live, click-through walkthrough. Want to see it working today? Jump straight into the real product — it's free during beta.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://homenex.aiknol.com/" target="_blank" rel="noopener">
+        Try HomeNex Now
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="/">← Back to site</a>
+    </div>
+    <small>Powered by Apprend Technologies</small>
+  </div>
+</body>
+</html>
